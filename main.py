@@ -2,19 +2,15 @@ from modules import E621, RULE34, ProxyScraper, FURBOORU, E926, Multporn, Yiffer
 import json
 import os
 from termcolor import colored
-from ctypes import windll
 from time import sleep
 from sys import exit
 
 
 version = "1.3.1"
-windll.kernel32.SetConsoleTitleW(f"NN-Downloader | v{version}")
-proxy_list = []
-header = {"User-Agent":f"nn-downloader/{version} (by Official Husko on GitHub)"}
 
 class Main():
     def main_startup():
-        os.system("cls")
+        os.system("clear")  # Replaced "cls" with "clear"
         print(colored("======================================================================================================================", "red"))
         print(colored("|                                                                                                                    |", "red"))
         print(colored("|     " + colored("Product: ", "white") + colored("NN-Downloader", "green") + colored("                                                                                         |", "red"), "red"))
@@ -36,7 +32,7 @@ class Main():
             user_OTD = config["oneTimeDownload"]
             user_blacklist = config["blacklisted_tags"]
             user_blocked_formats = config["blacklisted_formats"]
-        
+
         # Create a new config with default values
         else:
             default_config = {
@@ -86,7 +82,7 @@ class Main():
             sleep(7)
             exit(0)
 
-        if user_proxies == True:
+        if user_proxies == "true":  # Replaced True with "true"
             print(colored("Fetching Fresh Proxies...", "yellow"), end='\r')
             ProxyScraper.Scraper(proxy_list=proxy_list)
             print(colored(f"Fetched {len(proxy_list)} Proxies.        ", "green"))
@@ -102,7 +98,7 @@ class Main():
 
         if site in ["multporn", "yiffer", "luscious"]:
             pass
-        else: 
+        else:
             print(colored("Please enter the tags you want to use", "green"))
             user_tags = input(">> ").lower()
             if user_tags == "":
@@ -152,13 +148,12 @@ class Main():
             print(colored("Please enter the link. (e.g. https://www.luscious.net/albums/bifurcation-ongoing_437722)", "green"))
             URL = input(">> ")
             Luscious.Fetcher(proxy_list=proxy_list, user_proxies=user_proxies, header=header, URL=URL)
-        
-        
         else:
             print(colored("Site not supported. Open a ticket to request support for that site!", "red"))
 
         # Jump back to start
         Main.main_startup()
+
 
 if __name__ == '__main__':
     Main.main_startup()
