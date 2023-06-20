@@ -1,11 +1,12 @@
 # NN-Downloader-Linux
-Ported version of NN-Downloader to linux
+Ported version of NN-Downloader to Linux
 
-Welcome to the successor of the [multporn image downloader][1] [v1][2] & [v2][1] and most downloaders out there regarding "NSFW" material. The NN-Downloader or Naughty-Naughty-Downloader (yes very creative I know) supports multiple sites with their official API (if available), proxies, and its also portable.
+# This is still in a beta report bugs
+
+Welcome to the successor of the [multporn image downloader][1] [v1][2] & [v2][1] and most downloaders out there regarding "NSFW" material. The NN-Downloader or Naughty-Naughty-Downloader (yes very creative I know) supports multiple sites with their official API (if available), and proxies, and it's also portable.
 
 This is not the complete version and it only works on a [few][13] sites currently. The other parts are WIP and will be completed in the near future. More Documentation and other gibberish coming soon.
 
-[Download][14]
 
 <br />
 
