@@ -1,8 +1,9 @@
-# NN-Downloader
+# NN-Downloader-Linux
+Ported version of NN-Downloader to linux
 
-Welcome to the successor of the [multporn image downloader][1] [v1][2] & [v2][1] and most downloaders out there regarding "NSFW" material. The NN-Downloader or Naughty-Naughty-Downloader (yes very creative i know) supports multiple sites with their official api (if available), proxies and its also portable.
+Welcome to the successor of the [multporn image downloader][1] [v1][2] & [v2][1] and most downloaders out there regarding "NSFW" material. The NN-Downloader or Naughty-Naughty-Downloader (yes very creative I know) supports multiple sites with their official API (if available), proxies, and its also portable.
 
-This is not the complete version and it only works on a [few][13] sites currently. The other parts are WIP and will be complete in the near future. More Documentation and other gibberish coming soo.
+This is not the complete version and it only works on a [few][13] sites currently. The other parts are WIP and will be completed in the near future. More Documentation and other gibberish coming soon.
 
 [Download][14]
 
@@ -46,12 +47,12 @@ This is not the complete version and it only works on a [few][13] sites currentl
 [18]:https://hentairead.com/
 
 
-Further sites can be added. Just open a [support ticket][11] with the url to the site.
+Further sites can be added. Just open a [support ticket][11] with the URL to the site.
 
 <br />
 <br />
 <br />
 
 #### Disclaimer  
-***I'am not in any way affiliated or working with these Sites. This is a unofficial project.***  
-*I would suggest you to use a customized Windows Terminal.
+*** I am not in any way affiliated or working with these Sites. This is an unofficial project.***  
+*I would suggest you use a customized Windows Terminal.
